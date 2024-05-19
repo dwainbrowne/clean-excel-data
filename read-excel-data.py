@@ -124,7 +124,7 @@ merged_df = merged_df.drop_duplicates()
 merged_df.columns = [col.replace(' ', '') for col in merged_df.columns]
 
 # Save the merged dataframe to a new excel file
-output_path = os.path.join(folder_path, '2024_excel_and_csv_merged_output_006.xlsx')
+output_path = os.path.join(folder_path, '2024_excel_and_csv_merged_output_007.xlsx')
 try:
     merged_df.to_excel(output_path, index=False)
     print(f"Merged file saved to {output_path}")
